@@ -1,6 +1,6 @@
 ---
 name: deal-intake
-description: "Xero Enterprise Deal Intake — guides a seller through submitting a deal for approval. ALWAYS trigger this skill when the user says 'I want to start a strategic AB deal review' or any close variation. Also trigger when a seller wants to submit a deal, run deal intake, generate a deal summary, or get approval for an enterprise deal. The seller pastes a Deal Summary from the Xero Deal Model Google Sheet and Claude runs KPI evaluation, asks structured questions, and produces a formatted deal summary uploaded to Google Drive with an Asana approval task."
+description: " Enterprise Deal Intake — guides a seller through submitting a deal for approval. ALWAYS trigger this skill when the user says 'I want to start a strategic AB deal review' or any close variation. Also trigger when a seller wants to submit a deal, run deal intake, generate a deal summary, or get approval for an enterprise deal. The seller pastes a Deal Summary from the Xero Deal Model Google Sheet and Claude runs KPI evaluation, asks structured questions, and produces a formatted deal summary uploaded to Google Drive with an Asana approval task."
 ---
 
 # Deal Intake Skill
@@ -9,7 +9,7 @@ Trigger this skill when a user uploads or references a Deal Model file and asks 
 
 ## What this skill does
 
-Runs the full Xero Enterprise Deal Intake workflow entirely inside Claude:
+Runs the full Enterprise Deal Intake workflow entirely inside Claude:
 1. Reads the uploaded Deal Model (Google Sheet or XLSX)
 2. Evaluates KPIs against approval thresholds
 3. Pre-fills seller fields from Salesforce flat file
@@ -338,8 +338,8 @@ Reply with a summary:
 
 ## Notes
 
-- The Asana workspace GID is `41261904390129`
-- The Deal Model template URL is: https://docs.google.com/spreadsheets/d/1MoIlq_cYL56YV-zOVViU-DwpwMJ2d_VV2Yf74HKnGio/
+- The Asana workspace GID is **confidential**
+- The Deal Model template URL is: **confidential**
 - Use plain `notes` not `html_notes` for Asana tasks — the XML validator rejects `<` `>` `&` characters
 - Google Drive stores as HTML (not native Google Doc) — fully viewable in browser
 - When Salesforce MCP is live, replace flat file enrichment with `enrich_from_salesforce()`
